@@ -1,0 +1,9 @@
+{
+    "name": "ctin/back_yt-admin",
+    "type": "project",
+    "require": {
+        "google/apiclient": "^2.2",
+        "google/apiclient-services": "^0.41.0"
+    },
+    "license": "none"
+}
