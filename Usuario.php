@@ -17,13 +17,12 @@ class Usuario
 	//Solo se podra Generar una instacia de Usuario
 	private static $instance;
 
-	function __construct($id_token){
-		$_SESSION["id_token"] = $id_token;
+	function __construct(){
 	}
 
-	public static function getInstance($id_token){
+	public static function getInstance(){
 		if (!isset(self::$instance)) {
-			self::$instance = new self($id_token);
+			self::$instance = new self;
 		}
 		self::$instance->startSession();
 		return self::$instance;
